@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: fantasy;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(105, 233, 238);
+    position: relative;
+}
+
+.overlay {
+    visibility: hidden;
+    height: 300px;
+    transition: 1s;
+}
+
+.winOverlay {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    background-color: black;
+    opacity: 0.5;
+    height: 130%;
+    width: 100%;
+    z-index: 4;
+    text-align: center;
+}
+
+.winMessage {
+    position: relative;
+    top: 35vh;
+    font-weight: bold;
+    text-align: center;
+    z-index: 5;
+    font-size: 68px;
+    color: red;
+}
+
+.winner {
+    font-size: 80px;
+    animation: biggerWinner 3s linear infinite;
+}
+
+@keyframes biggerWinner {
+    0% {
+        transform: scale(1.6);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.6);
+    }
+}
+
+.congratulation {
+    font-size: 80px;
+    animation: biggerCongratulation 3s linear infinite;
+}
+
+@keyframes biggerCongratulation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.6);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.newGame {
+    font-size: 48px;
+    margin-top: 100px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    border: 10px solid red;
+    color: red;
+    font-weight: bold;
+    background-color: teal;
+}
+
+.header {
+    position: absolute;
+    margin-left: 5%;
+
+    justify-content: center;
+}
+
+h1 {
+    width: 100vw;
+
+    position: relative;
+    top: 5vh;
+    margin: auto;
+    padding: 10px;
+    font-size: 56px;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: fantasy;
+}
+
+.h2div {
+    margin-top: 5vh;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 50% 1fr;
+}
+h2 {
+    width: 50%;
+    padding: 10px;
+    margin-left: 40%;
+    font-size: 48px;
+    font-family: fantasy;
+    float: right;
+}
+
+.coin {
+    height: 70px;
+    width: 70px;
+    background-color: red;
+    border-radius: 50%;
+    border: 2px solid darkred;
+    box-shadow: -3px -3px 0 darkred inset;
+    transition: 2s;
+    animation: coinrotation 3s linear infinite;
+}
+@keyframes coinrotation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.board {
+    border: 1px solid darkblue;
+    display: flex;
+    box-shadow: -5px -5px 0 darkblue;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.column {
+    border: 0.5px solid darkblue;
+    background-color: blue;
+}
+
+.slot {
+    border: 0.5px solid darkblue;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hole {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background-color: white;
+    box-shadow: -5px -5px 0px darkblue inset;
+}
+
+.player1 .hole {
+    background: red;
+    box-shadow: -2px -3px 0px darkblue inset;
+}
+
+.player2 .hole {
+    background: yellow;
+    box-shadow: -2px -3px 0px darkblue inset;
+}
+
+.bottom {
+    width: 100vw;
+    height: 25vh;
+    background: rgb(136, 41, 3);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.grid {
+    display: flex;
+    top: 20px;
+    font-size: 28px;
+}
+.gridNumber {
+    padding-left: 46px;
+    padding-right: 46px;
+    height: 30px;
+    padding-top: 10px;
+    color: rgb(105, 233, 238);
+    visibility: hidden;
+}
+.playWithKeyboard {
+    position: absolute;
+    font-family: fantasy;
+    font-size: 32px;
+    float: left;
+    top: 25%;
+    left: 20%;
+}
+
+.keyboardPlay {
+    position: absolute;
+    font-family: fantasy;
+    font-size: 32px;
+    float: left;
+    top: 25%;
+    left: 20%;
+    visibility: hidden;
+}
+.keyboardPlay.two {
+    top: 40%;
+}
+
+.reset {
+    position: absolute;
+    font-family: fantasy;
+    font-size: 32px;
+    float: right;
+    top: 25%;
+    right: 20%;
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: 2px solid black;
+    z-index: 0;
+}
+.victory {
+    background-color: seagreen;
+}

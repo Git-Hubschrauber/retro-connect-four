@@ -264,4 +264,8 @@
             }
         }
     }
+
+    http.listen(process.env.PORT || 5500, function () {
+        console.log("listening on *:5500");
+    });
 })();

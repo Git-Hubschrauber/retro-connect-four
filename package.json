@@ -2,10 +2,9 @@
     "name": "4wins",
     "version": "1.0.0",
     "description": "",
-    "main": "4wins.js",
+    "main": "index.html",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node 4wins.html"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",

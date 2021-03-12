@@ -4,7 +4,8 @@
   "description": "",
   "main": "4wins.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 4wins.js"
   },
   "repository": {
     "type": "git",

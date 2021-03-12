@@ -1,0 +1,19 @@
+{
+  "name": "4wins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "4wins.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Git-Hubschrauber/retro-connect-four.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Git-Hubschrauber/retro-connect-four/issues"
+  },
+  "homepage": "https://github.com/Git-Hubschrauber/retro-connect-four#readme"
+}
